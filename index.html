@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AquaFlow - Hydration Redefined</title>
     <meta name="description" content="Smart hydration systems backed by hydrodynamics science">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .mobile-menu {
+            transition: transform 0.3s ease-in-out;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
 </head>
 <body class="font-sans antialiased">
     <!-- Announcement Bar -->
@@ -17,24 +34,37 @@
     <header class="sticky top-0 z-50 bg-white shadow-md">
         <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center">
-                <a href="/" class="text-2xl font-bold text-blue-600">AquaFlow</a>
+                <a href="https://Hidden-Knowledge.github.io/precision-engineered-for-the-purest-flow-hydration-redefined--2025-03-30-9hmjw" class="text-2xl font-bold text-blue-600 hover:text-blue-700 transition-colors duration-300">AquaFlow</a>
             </div>
             
             <div class="hidden md:flex items-center space-x-8">
                 <a href="#features" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Features</a>
                 <a href="#benefits" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">About</a>
                 <a href="#faq" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
-                <a href="https//stripe.com" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                <a href="https://stripe.com" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
                     Buy Now
                 </a>
             </div>
             
-            <button class="md:hidden text-gray-600">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                </svg>
+            <button class="mobile-menu-button md:hidden text-gray-600" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars text-2xl"></i>
             </button>
         </nav>
+        
+        <div class="mobile-menu hidden md:hidden">
+            <div class="px-4 py-2 space-y-4 bg-white shadow-lg">
+                <a href="#features" class="block text-gray-600 hover:text-blue-600 transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block text-gray-600 hover:text-blue-600 transition-colors duration-300">Benefits</a>
+                <a href="#testimonials" class="block text-gray-600 hover:text-blue-600 transition-colors duration-300">Testimonials</a>
+                <a href="#about" class="block text-gray-600 hover:text-blue-600 transition-colors duration-300">About</a>
+                <a href="#faq" class="block text-gray-600 hover:text-blue-600 transition-colors duration-300">FAQ</a>
+                <a href="https://stripe.com" class="block bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-all duration-300 text-center">
+                    Buy Now
+                </a>
+            </div>
+        </div>
     </header>
 
     <!-- Hero Section -->
@@ -48,14 +78,14 @@
         
         <div class="relative container mx-auto px-4 h-full flex items-center">
             <div class="max-w-4xl mx-auto text-center text-white">
-                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6 animate-fade-in">
                     Precision-Engineered for the Purest Flow—Hydration Redefined.
                 </h1>
                 <p class="text-xl md:text-2xl mb-8">
-                    Smart hydration systems backed by hydrodynamics science
+                    Experience revolutionary hydration with our advanced water purification technology
                 </p>
-                <a href="https//stripe.com" 
-                   class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105">
+                <a href="https://stripe.com" 
+                   class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
                     Shop Now
                 </a>
             </div>
@@ -68,16 +98,29 @@
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">FDA & Global Compliance for Safe, Quality Water</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div class="feature-card bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
                     <div class="text-blue-600 mb-4">
-                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
+                        <i class="fas fa-check-circle text-4xl"></i>
                     </div>
                     <h3 class="text-xl font-semibold mb-4">FDA Approved</h3>
                     <p class="text-gray-600">Meeting the highest standards of safety and quality in water purification.</p>
                 </div>
-                <!-- Additional feature cards would go here -->
+                
+                <div class="feature-card bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-flask text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Advanced Filtration</h3>
+                    <p class="text-gray-600">Multi-stage purification process removing 99.9% of contaminants.</p>
+                </div>
+                
+                <div class="feature-card bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-leaf text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Eco-Friendly</h3>
+                    <p class="text-gray-600">Sustainable materials and energy-efficient operation for minimal environmental impact.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -89,22 +132,161 @@
             <div class="container mx-auto px-4">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     <div class="order-2 md:order-1">
-                        <h2 class="text-3xl font-bold mb-6">Globally Certified Quality</h2>
-                        <p class="text-gray-600 mb-6">Meeting international standards for water purification excellence.</p>
-                        <a href="https//stripe.com" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300">
+                        <h2 class="text-3xl font-bold mb-6">Advanced Purification Technology</h2>
+                        <p class="text-gray-600 mb-6">Our revolutionary filtration system employs cutting-edge nanotechnology and multi-stage purification processes to deliver water that's not just clean, but optimally mineralized for your health. Experience the difference of truly pure, great-tasting water that maintains its natural beneficial properties.</p>
+                        <a href="https://stripe.com" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
                             Learn More
                         </a>
                     </div>
                     <div class="order-1 md:order-2">
                         <img src="https://images.unsplash.com/photo-1556740714-a8395b3bf30f?w=800&h=600&fit=crop&q=80" 
-                             alt="Global certification" 
-                             class="rounded-lg shadow-xl">
+                             alt="Advanced purification system" 
+                             class="rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Additional benefits sections would follow similar pattern -->
+        <!-- Benefit 2 -->
+        <div class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="order-1">
+                        <img src="https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=800&h=600&fit=crop&q=80" 
+                             alt="Smart monitoring system" 
+                             class="rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    </div>
+                    <div class="order-2">
+                        <h2 class="text-3xl font-bold mb-6">Smart Monitoring System</h2>
+                        <p class="text-gray-600 mb-6">Stay informed with real-time water quality metrics through our integrated smart monitoring system. Track water usage, filter life, and maintenance schedules from your smartphone. Our IoT-enabled solution ensures you always have optimal water quality at your fingertips.</p>
+                        <a href="https://stripe.com" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                            Discover More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Benefit 3 -->
+        <div class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="order-2 md:order-1">
+                        <h2 class="text-3xl font-bold mb-6">Eco-Conscious Design</h2>
+                        <p class="text-gray-600 mb-6">Our commitment to sustainability is reflected in every aspect of our design. From energy-efficient operation to recyclable components and minimal waste production, we're helping you reduce your environmental footprint while enjoying premium water quality. Choose a solution that's good for you and the planet.</p>
+                        <a href="https://stripe.com" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-105">
+                            Explore More
+                        </a>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&h=600&fit=crop&q=80" 
+                             alt="Eco-friendly design" 
+                             class="rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="relative py-20 bg-blue-600">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1600&h=800&fit=crop&q=80" 
+                 alt="Water purification background" 
+                 class="w-full h-full object-cover opacity-20">
+        </div>
+        <div class="relative container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-8">Transform Your Hydration Experience Today</h2>
+            <p class="text-xl text-white mb-8 max-w-2xl mx-auto">Join thousands of satisfied customers who have discovered the difference of truly pure, optimally mineralized water.</p>
+            <a href="https://stripe.com" 
+               class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 hover:shadow-lg">
+                Get Started Now
+            </a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">About AquaFlow</h2>
+            <div class="max-w-3xl mx-auto space-y-8">
+                <p class="text-gray-600 leading-relaxed">
+                    Founded in 2020 by a team of water quality experts and engineers, AquaFlow emerged from a simple yet powerful vision: to revolutionize how people access clean, healthy water. Our journey began in a small laboratory where we developed our first prototype, combining advanced filtration technology with smart monitoring capabilities.
+                </p>
+                <p class="text-gray-600 leading-relaxed">
+                    Today, we're driven by our mission to provide innovative water solutions that enhance both human health and environmental sustainability. Our core values of scientific excellence, customer-first approach, and environmental responsibility guide every decision we make, from product development to customer service.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">What Our Customers Say</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The smart monitoring system is a game-changer. I always know when to replace filters, and the water quality is consistently excellent."</p>
+                    <div class="text-sm">
+                        <p class="font-semibold">Sarah Johnson</p>
+                        <p class="text-gray-500">Tech Executive, San Francisco</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Installation was seamless, and the eco-friendly design aligns perfectly with our company's sustainability goals. We've seen a 40% reduction in bottled water usage."</p>
+                    <div class="text-sm">
+                        <p class="font-semibold">Michael Chen</p>
+                        <p class="text-gray-500">Sustainability Director, Green Solutions Inc.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"The mineral balance in the water is perfect. As a fitness instructor, I can really taste and feel the difference in hydration quality."</p>
+                    <div class="text-sm">
+                        <p class="font-semibold">Lisa Martinez</p>
+                        <p class="text-gray-500">Fitness Professional, Miami</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="flex text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Worth every penny! The app integration makes maintenance a breeze, and customer support has been exceptional."</p>
+                    <div class="text-sm">
+                        <p class="font-semibold">David Thompson</p>
+                        <p class="text-gray-500">Home Technology Enthusiast</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- FAQ Section -->
@@ -112,8 +294,26 @@
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Frequently Asked Questions</h2>
             
-            <div class="max-w-3xl mx-auto space-y-4">
-                <!-- FAQ items would go here -->
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
+                    <h3 class="text-xl font-semibold mb-3">How often do I need to replace the filters?</h3>
+                    <p class="text-gray-600">Our smart monitoring system will notify you when it's time to replace filters, typically every 6-12 months depending on usage. The app provides real-time filter status updates.</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
+                    <h3 class="text-xl font-semibold mb-3">Is installation complicated?</h3>
+                    <p class="text-gray-600">Not at all! Most customers complete the installation in under 30 minutes. We provide detailed instructions and video guides, plus our support team is available 24/7 if you need assistance.</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
+                    <h3 class="text-xl font-semibold mb-3">What minerals are retained in the filtered water?</h3>
+                    <p class="text-gray-600">Our system maintains beneficial minerals like calcium, magnesium, and potassium while removing harmful contaminants. The mineral balance is optimized for taste and health benefits.</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6">
+                    <h3 class="text-xl font-semibold mb-3">What's covered under the warranty?</h3>
+                    <p class="text-gray-600">We offer a comprehensive 5-year warranty covering all system components. This includes free replacement parts and technical support throughout the warranty period.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -129,18 +329,31 @@
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Contact</h4>
                     <p class="text-gray-400">info@aquaflow.com</p>
+                    <p class="text-gray-400">1-800-AQUAFLOW</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Legal</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://Hidden-Knowledge.github.io/precision-engineered-for-the-purest-flow-hydration-redefined--2025-03-30-9hmjw/privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://Hidden-Knowledge.github.io/precision-engineered-for-the-purest-flow-hydration-redefined--2025-03-30-9hmjw/terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://Hidden-Knowledge.github.io/precision-engineered-for-the-purest-flow-hydration-redefined--2025-03-30-9hmjw/blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
                     <div class="flex space-x-4">
-                        <!-- Social media icons would go here -->
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -149,5 +362,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
